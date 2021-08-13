@@ -1,6 +1,6 @@
 import { 
     ADD_TODO, 
-    ADD_TODO_SUCCESS, 
+    ADD_TASK_SUCCESS, 
     SHOW_ALERT,
     TOGGLE_STATUS,
     DELETE_TASK,
@@ -13,8 +13,8 @@ export const addToDo = (data) => {
     return { type: ADD_TODO, payload: data}
 }
 
-export const addToDoSuccess = (data) => {
-    return { type: ADD_TODO_SUCCESS, payload: data}
+export const addTaskSuccess = (data) => {
+    return { type: ADD_TASK_SUCCESS, payload: data}
 }
 
 export const showAlert = (data) => {

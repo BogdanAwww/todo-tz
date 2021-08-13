@@ -1,5 +1,5 @@
 import { 
-    ADD_TODO_SUCCESS, 
+    ADD_TASK_SUCCESS, 
     SHOW_ALERT,
     TOGGLE_STATUS,
     DELETE_TASK,
@@ -19,7 +19,7 @@ const reducer = (state = initialState, action) => {
     const { type, payload } = action
 
     switch (type) {
-        case ADD_TODO_SUCCESS: {
+        case ADD_TASK_SUCCESS: {
             return { 
                 ...state,
                 taskList: [...state.taskList, payload]

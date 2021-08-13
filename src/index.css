@@ -5,9 +5,69 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  display: flex;
+  justify-content: center;
+
+  margin-top: 50px;
+
+  font-size: 20px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+input {
+  outline: 0.5px solid grey;
+  border: none;
+  font-size: 1em;
+  padding: 0.5em 1rem;
+}
+
+.AddToDo-wrapper{
+  display: flex;
+  justify-content: space-between;
+  min-width: 400px;
+  margin-bottom: 50px;
+}
+
+.listItem{
+  margin: 20px 0;
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.listItem label{
+  width: 270px;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.completedText{
+  text-decoration: line-through;
+}
+
+.modalWrapper{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.4s;
+  pointer-events: none;
+}
+
+.modalWrapper-body{
+  display: flex;
+  gap: 50px;
+}
+
+.active{
+  opacity: 1;
+  pointer-events: all;
 }

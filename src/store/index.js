@@ -11,6 +11,8 @@ const store = createStore(
   applyMiddleware(logger, sagaMiddleware)
 )
 
+store.subscribe(() => localStorage.setItem('store', JSON.stringify(store.getState())))
+
 sagaMiddleware.run(rootSaga)
 
 export default store

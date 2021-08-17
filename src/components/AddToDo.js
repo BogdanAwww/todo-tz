@@ -1,6 +1,7 @@
-import { useState, useRef, useEffect } from 'react'
+import { useState } from 'react'
 import { useDispatch } from 'react-redux';
 import { addToDo } from '../store/actions/actions';
+
 
 const AddToDo = () => {
     const [task, setTask] = useState({
@@ -8,8 +9,6 @@ const AddToDo = () => {
         completed: false,
         id: Date.now()
     })
-    const input = useRef()
-
     const dispatch = useDispatch()
 
     const handleСlick = () => {

@@ -19,8 +19,6 @@ const persistState = localStorage.getItem('store')
     ? JSON.parse(localStorage.getItem('store'))
     : initialState;
 
-console.log(persistState)
-
 const reducer = (state = persistState, action) => {
     const { type, payload } = action
 

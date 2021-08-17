@@ -29,7 +29,8 @@ const ListToDo = () => {
     }
 
     return (
-        store.taskList.map((task) => (
+        <>
+         { store.taskList.map((task) => (
             <ItemToDo 
                 text={task.text} 
                 id={task.id}
@@ -39,7 +40,9 @@ const ListToDo = () => {
                 handleEdit={handleEdit}
                 key={task.id}
             />
-        ))    
+        ))   }
+        </>
+        
     )
 }
 

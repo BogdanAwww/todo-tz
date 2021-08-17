@@ -17,8 +17,8 @@ export const addTaskSuccess = (data) => {
     return { type: ADD_TASK_SUCCESS, payload: data}
 }
 
-export const showAlert = (data) => {
-    return { type: SHOW_ALERT, payload: data }
+export const showAlert = (status) => {
+    return { type: SHOW_ALERT, payload: status }
 }
 
 export const toggleStatus = (id) => {
@@ -29,8 +29,8 @@ export const deleteTask = (id) => {
     return { type: DELETE_TASK, payload: id}
 }
 
-export const showModal = (isOpen) => {
-    return { type: SHOW_MODAL, payload: isOpen}
+export const showModal = (status) => {
+    return { type: SHOW_MODAL, payload: status}
 }
 
 export const selectTask = (id) => {

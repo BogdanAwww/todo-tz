@@ -13,7 +13,7 @@ export const addToDo = (data) => ({ type: ADD_TODO, payload: data });
 
 export const addTaskSuccess = (data) => ({ type: ADD_TASK_SUCCESS, payload: data });
 
-export const showAlert = (status) => ({ type: SHOW_ALERT, payload: status });
+export const showAlert = (info) => ({ type: SHOW_ALERT, payload: info });
 
 export const toggleStatus = (id) => ({ type: TOGGLE_STATUS, payload: id });
 

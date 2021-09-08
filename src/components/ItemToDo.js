@@ -1,13 +1,23 @@
+import Timer from './Timer';
+
 function ItemToDo({
   text,
   id,
   completed,
+  deadline,
   handleCheckbox,
   handleDelete,
   handleEdit,
 }) {
   return (
     <div className="listItem">
+      {deadline && (
+      <Timer
+        deadline={deadline}
+        id={id}
+        completed={completed}
+      />
+      )}
       <input
         type="checkbox"
         checked={completed}

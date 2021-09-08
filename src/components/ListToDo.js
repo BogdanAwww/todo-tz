@@ -42,6 +42,7 @@ const ListToDo = () => {
           handleDelete={handleDelete}
           handleEdit={handleEdit}
           key={task.id}
+          deadline={task.deadline}
         />
       )) }
     </>

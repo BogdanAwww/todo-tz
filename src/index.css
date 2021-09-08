@@ -71,3 +71,9 @@ input {
   opacity: 1;
   pointer-events: all;
 }
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
